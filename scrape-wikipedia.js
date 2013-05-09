@@ -53,17 +53,17 @@ function processPage() {
         if (inOperator && line === '</tr>') {
             if (operator[2]) {
                 if (operator[2] === operator[3]) {
-                    console.log(operator[0] + operator[1] + ',' + operator[2]);
+                    console.log(operator[0] + operator[1] + ',' + operator[0] + ',' + operator[1] + ',' + operator[2]);
                 } else {
                     if (operator[3]) {
-                        console.log(operator[0] + operator[1] + ',' + operator[2] + ' [' + [operator[3]] + ']');
+                        console.log(operator[0] + operator[1] + ',' + operator[0] + ',' + operator[1] + ',' + operator[2] + ' [' + [operator[3]] + ']');
                     } else {
-                        console.log(operator[0] + operator[1] + ',' + operator[2]);
+                        console.log(operator[0] + operator[1] + ',' + operator[0] + ',' + operator[1] + ',' + operator[2]);
                     }
                 }
             } else {
                 if (operator[3]) {
-                    console.log(operator[0] + operator[1] + ',' + operator[3]);
+                    console.log(operator[0] + operator[1] + ',' + operator[0] + ',' + operator[1] + ',' + operator[3]);
                 }
             }
 
